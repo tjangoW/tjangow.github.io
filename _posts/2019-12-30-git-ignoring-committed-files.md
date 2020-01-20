@@ -1,4 +1,8 @@
-# Git ignoring committed files
+---
+tags: git
+---
+
+
 So after a file has been committed, even if it's later added into the `.gitignore`, its modification will be still visible. 
 For it to be really ignored, you need:
 ```sh
