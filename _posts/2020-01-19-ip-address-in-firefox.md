@@ -9,7 +9,7 @@ This feature is greatly *appreciated*.
 Well, to be fair, I am not at all up-to-date with networking security stuff and sorts,
 but seriously?
 
-Anyway, fix for firefox (version 72.0.1): go to `about:config` (yes, let's live dangerously) 
+Anyway, fix for firefox (version 72.0.1): go to [about:config](about:config) (yes, let's live dangerously) 
 and set the **keyword.enabled** to **false** (by double-clicking it).
 
 *Sauce*: [some not so related mozilla support post](https://support.mozilla.org/en-US/questions/1213978)
