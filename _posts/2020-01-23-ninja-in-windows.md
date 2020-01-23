@@ -29,6 +29,6 @@ One improvement will be to have better integration with IDE.
 Currently by running in the terminal of VSCode, I can click on the links to the error locations.
 Would be nicer to somehow scrap the output and display it together like in VS.
 
-Anyway, currently stuck at error C4716 with boost. Am I supposed to change the boost headers? ¯\_(ツ)_/¯
+Anyway, currently stuck at error C4716 with boost. Am I supposed to change the boost headers? ¯\\_(ツ)_/¯
 
-Interesting read on Ninja: https://www.aosabook.org/en/posa/ninja.html
+Interesting read on Ninja: <https://www.aosabook.org/en/posa/ninja.html>
