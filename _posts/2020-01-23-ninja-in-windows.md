@@ -16,7 +16,8 @@ but at least provide a better way to switch between config.
 Maybe I was doing it wrong, but I would have to open the CMakeSettings.json, 
 select the one I want, and freaking *generate*, which is not something I want everytime I switch between debug and rel yo!).
 
-Anyway, enough complain with Microsoft. Still though this process, I got to know other build tool/toolchain/whichever terms they use
+Anyway, enough complain with Microsoft.
+Still though this process, I got to know other build tool/toolchain/whichever terms they use
 like ninja and hooking them together: cmake-ninja|msbuild-clang|msvc!
 After looking up abit, ninja seems to be a tool with performance as its main focus.
 Tried to use CMake GUI on Windows to configurate it but was unsuccessful.
@@ -29,6 +30,8 @@ One improvement will be to have better integration with IDE.
 Currently by running in the terminal of VSCode, I can click on the links to the error locations.
 Would be nicer to somehow scrap the output and display it together like in VS.
 
-Anyway, currently stuck at error C4716 with boost. Am I supposed to change the boost headers? ¯\\\_(ツ)\_/¯
+Anyway, currently stuck at error C4716 with boost.
+Am I supposed to change the boost headers?
+¯\\\_(ツ)\_/¯
 
 Interesting read on Ninja: <https://www.aosabook.org/en/posa/ninja.html>
