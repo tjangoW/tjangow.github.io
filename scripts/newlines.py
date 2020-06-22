@@ -23,6 +23,7 @@ def formatNewlines(in_path: str) -> None:
 
     with open(in_path, "w") as f:
         f.write(new_s)
+    print("done with" + in_path)
 
 
 if __name__ == "__main__":
