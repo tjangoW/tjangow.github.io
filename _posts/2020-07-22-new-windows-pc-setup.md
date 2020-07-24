@@ -53,6 +53,7 @@ Note: all `preformatted text` are package names for chocolatey.
 - `shexview`
 - `shmnview`
 - `mousewithoutborders`
+- `path-copy-copy`
 - `coretemp`
 - `treesizefree`
 - `linkshellextension`
@@ -80,6 +81,10 @@ Note: all `preformatted text` are package names for chocolatey.
 - `microsoft-teams`
 - `signal`
 - `zoom`
+#### Latex
+- `miktex`
+- `texstudio`
+- `texmaker`
 
 #### programming
 - `FiraCode`
@@ -93,9 +98,14 @@ Note: all `preformatted text` are package names for chocolatey.
 - `cmake`
 - `ninja`
 - `python3`
+- `swig`
 - `vscode`
 - visual-studio
 - CLion
+- Intel Parallel Studio
+
+### tmp
+- `teamviewer`
 
 ## later on
 - Settings -> Update & Security -> For developers
@@ -108,7 +118,41 @@ Note: all `preformatted text` are package names for chocolatey.
         - If you want Outlook and search function, do not disable it entirely
 - Startup
     - Good guide from [ChrisTitusTech][CTT startup]
-- Disable animations
+- Disable animations _Adjust the appearance and performance of Windows_
+  - What I leave activated are _Enable Peek, Show thumbnails, Show windows contents, smooth edges, Smooth-scroll_
+- re-enable windows media player [Microsoft help][MS media player help] (for Preview in QTTabBar)
+  - Apparently, just activating in the new windows settings won't work.
+    Go to the very bottom of _Optional features_ -> _More Windows features_ to get the old _Windows Features_, activate _Media Features->Windows Media Player_
+- set up git credentials
+  - if you want to have multiple SSH keys, take a look at this [post][Multiple SSH keys guide]
+- default app
+- disable web search at Start Menu ([Guide from howtogeek][HTG Disable web search], check the *.reg file!)
+
+### from old notes
+- remove cortana
+  - comp/admin/wind/DataCollection/search -> disable cortana
+- [privacy on Chris titus](https://www.youtube.com/watch?v=yXaYszT11CA) or just use [third party](https://www.oo-software.com/en/shutup10)
+  - services
+    - Connected User Experiences
+    - dmwappushservice
+  - gp editor / registry
+    - comp/admin/wind/DataCollection/Telemetry -> 0
+  - task
+    - Microsoft/wind/Application Experience & Customer Experience -> disable all
+- setting
+  - system
+    - power & sleep
+      - adjust sleep time
+    - storage (in case have multiple hard disc)
+  - devices
+    - mouse size!
+    - Typing
+      - [ ] autocorrect misspelt words
+    - Pan & windows Ink - uncheck all
+  - personalisation
+    - colours -> dark theme
+    - start
+      - remove show more tiles
 
 ## Sauces
 [Chris Titus Tech debloats Windows 10][CTT debloat 2020]
@@ -119,3 +163,8 @@ Note: all `preformatted text` are package names for chocolatey.
 [O&O Shutup 10]: https://www.oo-software.com/en/shutup10
 [CTT startup]: https://christitus.com/clean-up-windows-10/#step-2-clean-up-windows-10-startupfigure-classwp-block-image
 [CTT debloat 2020]: https://christitus.com/debloat-windows-10-2020/
+[MS media player help]: https://support.microsoft.com/en-gb/help/14209/get-windows-media-player
+[Multiple SSH keys guide]: https://medium.com/@thucnc/how-to-specify-different-ssh-keys-for-git-push-for-a-given-domain-bef56639dc02
+[Github RSA fingerprint]: https://docs.github.com/en/github/authenticating-to-github/githubs-ssh-key-fingerprints
+[Bitbucket RSA fingerprint]: https://community.atlassian.com/t5/Bitbucket-articles/RSA-key-fingerprint-confirmation/ba-p/1114799
+[HTG Disable web search]: https://www.howtogeek.com/224159/how-to-disable-bing-in-the-windows-10-start-menu/
