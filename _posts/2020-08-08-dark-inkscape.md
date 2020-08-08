@@ -19,11 +19,14 @@ After exploring around, there are 2 options in the `Document Properties (Ctrl+Sh
 - turn on `Chequerboard background`
 
 To set this as default template, we will have to modify the file `C:\Program Files\Inkscape\share\inkscape\templates\default.svg`.
-My `default.svg` can be found [here](/assets/inkscape-default.svg) as a reference (I have also changed the default units to px and page size to 512x512).
+My `default.svg` can be found [here][default.svg github] as a reference (I have also changed the default units to px and page size to 512x512).
 At last, something more soothing to the eye:
 ![better dark inkscape](/assets/inkscape-default-dark.png)
 
+## Sources
+[Inkscape v1 Release Notes][release note]
 
 
 
+[default.svg github]: https://github.com/tjangoW/tjangow.github.io/blob/master/assets/inkscape-default.svg?short_path=b9dd32e
 [release note]: https://wiki.inkscape.org/wiki/index.php/Release_notes/1.0#Theme_selection
