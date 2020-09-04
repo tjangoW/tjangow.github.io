@@ -11,7 +11,7 @@ Anyway, after starting up Inkscape, go to `Edit -> Preferences (Ctrl+Shift+P) ->
 Check the `Use dark theme` option.
 Additionally, I also changed icon theme to `multicolor` along with the `Use symbolic icons` as the white icon colour makes them more visible and obvious.
 
-However, I am still not very satisfied with it, because the main drawing area is still too blinding!
+However, I am still not very satisfied with it, because the main drawing area is still too blindingly white!
 ![blinding inkscape](/assets/inkscape-default-bright-page.png)
 
 After exploring around, there are 2 options in the `Document Properties (Ctrl+Shift+D)` that could help:
@@ -23,10 +23,13 @@ My `default.svg` can be found [here][default.svg github] as a reference (I have 
 At last, something more soothing to the eye:
 ![better dark inkscape](/assets/inkscape-default-dark.png)
 
+PS: Inkscape v1 also made some changes to the command line interface, so remember to update your scripts!
+
 ## Sources
 [Inkscape v1 Release Notes][release note]
-
+[Inkscape Command Line Docs][man doc]
 
 
 [default.svg github]: https://github.com/tjangoW/tjangow.github.io/blob/master/assets/inkscape-default.svg?short_path=b9dd32e
 [release note]: https://wiki.inkscape.org/wiki/index.php/Release_notes/1.0#Theme_selection
+[man doc]: https://inkscape.org/doc/inkscape-man.html
