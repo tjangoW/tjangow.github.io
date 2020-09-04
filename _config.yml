@@ -1,10 +1,9 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: Tjango's Blog
+author: Tjango
+email: wolfgang.tjango@protonmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Blog of a software dev, who likes to automate trivial stuff in life and somewhat obsess with dark theme.
+  This "blog" actually serves as a record for myself, but I believe others could benefit from it as well.
 
 show_excerpts: true
 
