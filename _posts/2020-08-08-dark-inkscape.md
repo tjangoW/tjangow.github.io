@@ -26,8 +26,8 @@ At last, something more soothing to the eye:
 PS: Inkscape v1 also made some changes to the command line interface, so remember to update your scripts!
 
 ## Sources
-[Inkscape v1 Release Notes][release note]
-[Inkscape Command Line Docs][man doc]
+- [Inkscape v1 Release Notes][release note]
+- [Inkscape Command Line Docs][man doc]
 
 
 [default.svg github]: https://github.com/tjangoW/tjangow.github.io/blob/master/assets/inkscape-default.svg?short_path=b9dd32e
