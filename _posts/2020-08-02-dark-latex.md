@@ -89,7 +89,7 @@ On the other hand, TexStudio as to be configured at 2 places:
 2. _Options -> Configure TexStudio... -> Build -> PDF Viewer_: `txs:///view-pdf-external`
 
 
-## Sauces
+## Sources
 - [TexStudio Release Notes][texstudio release notes]
 - [pmaroco GitHub repo][custom texstudio dark]
 - [Latexgrucad website][forward search command]

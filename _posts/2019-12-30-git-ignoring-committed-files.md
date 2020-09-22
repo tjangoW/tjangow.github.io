@@ -9,4 +9,5 @@ For it to be really ignored, you need:
 $ git rm --cached tmp.log
 ```
 
-*Sauce*: [atlassian](https://www.atlassian.com/git/tutorials/saving-changes/gitignore#ignoring-a-previously-committed)
+## Sources
+- [atlassian](https://www.atlassian.com/git/tutorials/saving-changes/gitignore#ignoring-a-previously-committed)

@@ -27,4 +27,5 @@ std::shared_ptr<ui_object> var_very_long_name_menu, var_very_long_name_GUI, var_
 LOG(menu)
 ```
 
-*Sauces*: [microsoft VS 2019 docs](https://docs.microsoft.com/en-us/cpp/preprocessor/preprocessor-operators?view=vs-2019)
+## Sources
+- [microsoft VS 2019 docs](https://docs.microsoft.com/en-us/cpp/preprocessor/preprocessor-operators?view=vs-2019)
