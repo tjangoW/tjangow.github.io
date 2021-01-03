@@ -20,4 +20,4 @@ Now you just need to right click on the folders/shortcuts to change their icons.
 For folders on Quick Access, the File Explorer probably has to be restarted for the changes to take effect.
 
 
-[inkscape template]: [https://github.com/tjangoW/tjangow.github.io/blob/master/assets/icon-template.svg?short_path=b9dd32e]
+[inkscape template]: https://github.com/tjangoW/tjangow.github.io/blob/master/assets/icon-template.svg?short_path=1a51a0c
