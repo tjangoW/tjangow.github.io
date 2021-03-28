@@ -1,11 +1,13 @@
 ---
 # optional when the title is not the file name
 title: new windows pc setup
-tags: comma, separated, tags
+tags: windows, setup
 ---
 
 How I set up a Windows (10) PC when I first get it.
-Note: all `preformatted text` are package names for chocolatey.
+Note: all `preformatted text` are mostly package names for chocolatey.
+
+**There are some new updates from [Chris Titus Tech](https://christitus.com/debloat-windows-10-2020/), but I haven't got the time to go through them.**
 
 ## basic
 - Unbox, physical inspection and setup, charge!
@@ -13,111 +15,49 @@ Note: all `preformatted text` are package names for chocolatey.
 - create restore point
 - windows update, manufacturer (hardware driver, BIOS) update
 - enable bitLocker (since some BIOS update might need to decrypt the drive etc)
-- install [chocolatey].
+- install [chocolatey]
    ```powershell
    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```
 - Debloat windows
     - [Windows10Debloat][win10debloat]
     - [Windows 10 Setup Script][win10 Setup] (for winver>= 2004)
-    - [OOSU10][O&O Shutup 10]
+    - [OOSU10][O&O Shutup 10] `shutup10`
     - Uninstaller `bulk-crap-uninstaller ccleaner`
 - Disable windows store update
 
 ## Additional Programmes
-### utility
+### Utility
 - Browser `firefox`
     - Sign in to sync stuff
     - or set up yourself everytime
     - [Dark mode for firefox](2020-06-2020-06-22-dark-fox.md)
-    - plugin settings (stylus)
-- Cloud sync `owncloud-client dropbox googledrive`
-- Office tools, Outlook
+    - plugins/add-ons (uBlock Origin, Privacy Badger, BitWarden, Auto Tab Discard, Facebook Container, Flagfox, Simple Tab Groups, VirusTotal scan etc)
+- [Cloud sync](#cloud)
+- Office tools, Email client
 
-### transfer from another PC
-- Greenshot + sync util to screenshot settings
-- `mousewithoutborders`
-- sync `sqlitebrowser`
+### Transfer from another PC
+- Greenshot `greenshot` + sync util to screenshot settings
+- `mousewithoutborders` Windows only or `barrier` for cross platform 
 - environment variables
 
 ### Work
-- VPN
+- VPNs
 - IDE
-    - Visual Studio (C++)
-    - JetBrains
-    - VS Code
-        - `code --list-extensions` and `code --install-extension`
-
-### All programmes in categories
-#### util
-- `chocolateygui`
-- `shexview`
-- `shmnview`
-- `mousewithoutborders`
-- `path-copy-copy`
-- `coretemp`
-- `treesizefree`
-- `linkshellextension`
-#### cloud
-- `cryptomator`
-- `cyberduck`
-- `owncloud-client`
-- `dropbox`
-- `googledrive`
-#### alternatives
-- `qttabbar`
-- `ditto`
-- `greenshot`
-- `7zip`
-- `peazip`
-- `everything`
-- `powertoys`
-- `sumatrapdf`
-- `irfanview`
-- `mpc-hc`
-- `paint.net`
-#### misc
-- `inkscape`
-- `speedtest`
-- `microsoft-teams`
-- `signal`
-- `zoom`
-#### Latex
-- `miktex`
-- `texstudio`
-- `texmaker`
-
-#### programming
-- `FiraCode`
-- `notepadplusplus`
-- `powershell-core`
-- `ConEmu`
-- `procexp`
-- `winmerge`
-- `git`
-- `tortoisesvn`
-- `cmake`
-- `ninja`
-- `python3`
-- `swig`
-- `vscode`
-- visual-studio
-- CLion
-- Intel Parallel Studio
-
-### tmp
-- `teamviewer`
+  - Visual Studio (C++)
+  - JetBrains
+  - VS Code
+    ```sh
+    code --list-extensions    # to save all extensions and
+    code --install-extension  # on new pc
+    ```
+[More programmes](#all-programmes-in-categories) somewhat sorted at the end of the page.
 
 ## later on
 - Settings -> Update & Security -> For developers
-    - Developer mode
-    - File Explorer options
-- Windows indexing
-    - _Advanced -> Index location_ so that when I run TreeSize, I know to ignore it directly
-    - Clean up unnecessary locations
-        - If you use PowerToys Run, you still need windows indexing
-        - If you want Outlook and search function, do not disable it entirely
+  - Developer mode
+  - File Explorer options
 - Startup
-    - Good guide from [ChrisTitusTech][CTT startup]
+  - Good guide from [ChrisTitusTech][CTT startup]
 - Disable animations _Adjust the appearance and performance of Windows_
   - What I leave activated are _Enable Peek, Show thumbnails, Show windows contents, smooth edges, Smooth-scroll_
 - re-enable windows media player [Microsoft help][MS media player help] (for Preview in QTTabBar)
@@ -127,35 +67,107 @@ Note: all `preformatted text` are package names for chocolatey.
   - if you want to have multiple SSH keys, take a look at this [post][Multiple SSH keys guide]
 - default app
 - disable web search at Start Menu ([Guide from howtogeek][HTG Disable web search], check the *.reg file!)
-
-### from old notes
-- remove cortana
-  - comp/admin/wind/DataCollection/search -> disable cortana
-- [privacy on Chris titus](https://www.youtube.com/watch?v=yXaYszT11CA) or just use [third party](https://www.oo-software.com/en/shutup10)
-  - services
-    - Connected User Experiences
-    - dmwappushservice
-  - gp editor / registry
-    - comp/admin/wind/DataCollection/Telemetry -> 0
-  - task
-    - Microsoft/wind/Application Experience & Customer Experience -> disable all
-- setting
-  - system
-    - power & sleep
-      - adjust sleep time
-    - storage (in case have multiple hard disc)
-  - devices
-    - mouse size!
-    - Typing
-      - [ ] autocorrect misspelt words
+- Settings
+  - System
+    - Storage: Turn off Storage Sense
+    - Shared experiences
+    - Clipboard
+    - Remote Desktop
+    - power & sleep: adjust sleep time
+  - Networking -> WiFi
+    - on random hardware addresses
+    - off Hotspot 2.0 networks
+  - Devices
+    - Mouse: theme & size
+    - Typing: auto-correction
     - Pan & windows Ink - uncheck all
-  - personalisation
-    - colours -> dark theme
-    - start
-      - remove show more tiles
+  - Search
+    - Permission & History
+    - Searching Windows -> Advance Search Indexer Settings
+      - _Advanced -> Index location_ so that when I run TreeSize, I know to ignore it directly
+      - Clean up unnecessary locations
+          - If you use PowerToys Run, you still need windows indexing
+          - If you want Outlook and search function, do not disable it entirely
+  - Privacy
+  - Update -> Delivery Optimisation
+- Mouse theme & size
+- Save battery: dim screen but not sleep directly!
+  - Settings -> Personalisation -> Lock Screen: set to Slideshow temporarily, then Advanced settings
+    - disable 'When my PC is inactive, show lock screen instead of turning off the screen'
+  - Settings -> System -> Power & sleep: 
+- clean up services.msc
 
-## Sauces
-[Chris Titus Tech debloats Windows 10][CTT debloat 2020]
+
+---
+## All programmes in categories
+### util
+- `chocolateygui`
+- `choco-cleaner`
+- `shexview`
+- `shmnview`
+- `mousewithoutborders`
+- `barrier`
+- `path-copy-copy`
+- `coretemp`
+- `treesizefree`
+- `LinkShellExtension`
+- `hashmyfiles`
+- `kde-mover-sizer`
+### cloud
+- `cryptomator`
+- `cyberduck`
+- `owncloud-client`
+- `dropbox`
+- `googledrive`
+- `megasync`
+### alternatives
+- `qttabbar`
+- `ditto`
+- `greenshot`
+- `7zip`
+- `peazip`
+- `everything` instead of Windows search
+- `powertoys`
+- `sumatrapdf` and `foxitreader`
+- `irfanview` and `irfanviewplugins` to browse picture
+- `mpc-hc`
+  - Go to _View->Options->Player->Formats_ and associate the format you what
+- `paint.net`
+### misc
+- `inkscape`
+- `speedtest`
+- `microsoft-teams`
+- `signal`
+- `zoom`
+- `teamviewer`
+#### Latex
+- `miktex`
+- `texstudio`
+#### programming
+- `git`
+- `tortoisesvn`
+- `winmerge`
+- `notepadplusplus`
+- `nano`
+- `powershell-core`
+- `ConEmu`
+- `procexp`
+- `vscode`
+- `FiraCode`
+- `cmake`
+- `ninja`
+- `python3`
+- `swig`
+- `jdk8`
+- `miniconda3`
+- `sqlitebrowser`
+- visual-studio
+- CLion
+- Intel Parallel Studio
+
+---
+## Sources
+- [Chris Titus Tech debloats Windows 10][CTT debloat 2020]
 
 [win10debloat]: https://github.com/Sycnex/Windows10Debloater
 [chocolatey]: https://chocolatey.org/install
