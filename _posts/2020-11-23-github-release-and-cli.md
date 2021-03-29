@@ -10,11 +10,14 @@ Just an accidental mouse press or for some unknown reasons, the upload fails and
 
 Somehow I stumbled upon GitHub CLI (`choco install gh`),
 which is a true life saver!
-The exact same job that I was trying over hours is done reliably in about 10 minutes!!
+The exact same job that I was trying over hours is done reliably in about 10 minutes
+(Not to bad since [TechInternets][calc] estimation is around 9mins)!!
 A word on the gh-cli, it is actually something similar to git, 
 but manages Github's *specific* stuff like issues, pr, releases etc.
 
 ## Sources
 - [Github CLI Manual/Docs for Release Upload][gh upload ref]
+- [Transfer time calculator from TechInternets][calc]
 
 [gh upload ref]: https://cli.github.com/manual/gh_release_upload
+[calc]: https://techinternets.com/copy_calc
