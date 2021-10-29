@@ -16,7 +16,8 @@ Prior to this, I was using a custom theme from [pmaroco][custom texstudio dark],
 
 ## PDF Viewer
 I have started dark themed LaTeX experience with external viewer.
-However, it is not always a smooth experience. The exact same command worked fine at the beginning, but right now the forward search (from *.tex to the line in PDF) is buggy: works for some documents but not the other.
+However, it is not always a smooth experience.
+The exact same command worked fine at the beginning, but right now the forward search (from *.tex to the line in PDF) is buggy: works for some documents but not the other.
 I had enough of interruption with this coupling and hence now switch back to use internal viewer.
 
 In short, if it is fine for you to change the PDF colour, I suggest go with the path of internal viewer.

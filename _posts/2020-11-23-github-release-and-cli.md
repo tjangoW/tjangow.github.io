@@ -13,7 +13,7 @@ which is a true life saver!
 The exact same job that I was trying over hours is done reliably in about 10 minutes
 (Not to bad since [TechInternets][calc] estimation is around 9mins)!!
 A word on the gh-cli, it is actually something similar to git, 
-but manages Github's *specific* stuff like issues, pr, releases etc.
+but manages Github *specific* stuff like issues, pr, releases etc.
 
 ## Sources
 - [Github CLI Manual/Docs for Release Upload][gh upload ref]

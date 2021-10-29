@@ -27,4 +27,5 @@ def formatNewlines(in_path: str) -> None:
 
 
 if __name__ == "__main__":
-    formatNewlines(sys.argv[-1])
+    # formatNewlines(sys.argv[-1])
+    formatAllInFolder(sys.argv[-1])

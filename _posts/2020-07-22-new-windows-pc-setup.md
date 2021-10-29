@@ -96,7 +96,9 @@ Note: all `preformatted text` are mostly package names for chocolatey.
     - disable 'When my PC is inactive, show lock screen instead of turning off the screen'
   - Settings -> System -> Power & sleep: 
 - clean up services.msc
-
+- create symbolic link privilege
+  - local security policy -> security settings -> local policies -> User rights assignment -> Create symbolic links
+    - check `Groups` in object type, then type in `Users`
 
 ---
 ## All programmes in categories
