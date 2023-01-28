@@ -43,7 +43,8 @@ For this purpose, we have to get the content in our public key into `~/.ssh/auth
    - or simply just SSH to remote, nano/vim the `~/.ssh/authorized_keys`, and paste the content
 
 ### Git (GitHub etc)
-This is relatively straight forward. Usually you just need to go to _Settings -> SSH (and GPG) Keys_ and add a new key there.
+This is relatively straight forward.
+Usually you just need to go to _Settings -> SSH (and GPG) Keys_ and add a new key there.
 
 
 ## 3. Test Connection etc

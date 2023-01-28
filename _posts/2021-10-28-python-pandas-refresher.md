@@ -9,7 +9,8 @@ When you do not use `pandas` often, searching for documentation is a time consum
 ### Core concepts
 - DataFrame (usually instantiated as `df`) is a table with row and column names/indices 
   - row index default to `0:n`, may be specified otherwise.
-- avoid chained(indexing then) assignment! e.g. `df["col2"][df["col1"] > 4] = 0` will [fail][pd ref chained indexing]!
+- avoid chained(indexing then) assignment!
+e.g. `df["col2"][df["col1"] > 4] = 0` will [fail][pd ref chained indexing]!
 
 ### Import export
 - import from 
