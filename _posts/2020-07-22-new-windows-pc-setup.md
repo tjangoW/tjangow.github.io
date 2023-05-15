@@ -182,3 +182,10 @@ Note: all `preformatted text` are mostly package names for chocolatey.
 [Github RSA fingerprint]: https://docs.github.com/en/github/authenticating-to-github/githubs-ssh-key-fingerprints
 [Bitbucket RSA fingerprint]: https://community.atlassian.com/t5/Bitbucket-articles/RSA-key-fingerprint-confirmation/ba-p/1114799
 [HTG Disable web search]: https://www.howtogeek.com/224159/how-to-disable-bing-in-the-windows-10-start-menu/
+
+
+
+- `psreadlineoptions`
+- ipconfig.exe /all
+- Get-ComputerInfo
+- 

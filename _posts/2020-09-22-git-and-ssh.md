@@ -51,7 +51,8 @@ Usually you just need to go to _Settings -> SSH (and GPG) Keys_ and add a new ke
 After all has been set up, I will usually perform a connectivity check to make sure everything is working properly.
 ```bash
 $ ssh -vT yourLoginName@remoteName  # for remote SSH
-$ ssh -vT git@github.com            # for git at GitHub. For other host, change accordingly
+$ ssh -vT git@github.com            # for git at GitHub.
+For other host, change accordingly
 ```
 - For the first connection, you will be prompted with a dialogue about the host key fingerprint.
   Do check their websites to verify it.
